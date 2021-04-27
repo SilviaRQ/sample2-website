@@ -1,0 +1,502 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family: "flaming";
+	src:url("fuentes/flaming.otf");
+}
+@font-face{
+	font-family: "odin";
+	src:url("fuentes/odinrounded-bold.otf");
+}
+@font-face{
+	font-family: "brad";
+	src:url("fuentes/brad.ttf");
+}
+
+
+/*COMENZAMOS PARA CELU*/
+
+#pc{
+	overflow: auto;
+	display: none; /*si el monitor mide desde 720 o más, oculta */
+}
+
+
+h3{
+	font-family: brad;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: center;
+	color: gray;
+}
+
+body{
+	background-color: white;
+	width: 700px;
+	color: red;
+	margin: auto;
+}
+
+header{
+	background-image: url("imagenes/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 180px;
+}
+header img{
+	margin-left: 180px;
+	width: 50%;
+}
+
+
+#QuienSomos{
+	background-color: white;
+	height: 800px;
+	padding: 50px;
+}
+#QuienSomos h1{
+	font-family: flaming;
+	font-size: 5em;
+	font-weight: lighter;
+	text-align: center;
+	color: rgb(254, 206, 224);
+}
+
+#servicios{
+	background-color: white;
+}
+#servicios h2{
+	font-family: flaming;
+	font-size: 3em;
+	font-weight: lighter;
+	text-align: center;
+	color: rgb(130, 233, 201);
+}
+
+#QuienSomos a{
+	text-decoration: none; 
+	color: gray;
+}
+
+#fotos{
+	overflow: auto;
+	background-color: white;
+}
+
+.galeria img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 25px;
+    margin-left: 200px;
+    width: 300px;
+    height: 300px;
+}
+
+.galeria img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.somos img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 70%;
+    
+}
+.somos img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+#contactocelu{
+	background-color: rgba(251, 254, 206, 0.9);
+	height: 800px;
+	padding: 50px;
+}
+
+#contactocelu p{
+	font-family: brad;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: justify;
+	color: gray;
+}
+
+aside{
+	display: none; /* no muestra el VOLVER ARRIBA*/
+}
+#navTablet{
+	display: none;
+}
+#navPC{
+	display: none;
+}
+
+#redes{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 600px;
+	height: 350px;
+	float: left;
+	padding: 10px;
+}
+#redes img{
+	margin: 0px 15px;
+}
+#twitter{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 400px;
+	height: 500px;
+	float: left;
+	margin-left: 40px;
+	display: none; /*no muestra para celu*/
+}
+#mensaje{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 500px;
+	height: 150px;
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+
+/*PARA TABLETS*/
+@media only screen and (min-width: 720px){ /*si el monitor mide desde 720 o más*/
+
+
+#pc{
+	overflow: auto;
+	display: none; /*si el monitor mide desde 720 o más, oculta */
+}
+
+
+body{
+	background-color: white;
+	width: 900px;
+	color: red;
+	margin: auto;
+}
+
+header{
+	background-image: url("imagenes/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 200px;
+}
+
+header img{
+	margin-left: 300px;
+	width: 40%;
+}
+
+#navTablet{
+	display: inherit;
+}
+
+#navTablet{
+	margin-top: 10px;
+	background-color: rgba(254, 206, 224, 0.9);
+	height: 50px;
+}
+#navTablet ol{
+	list-style-type: none;
+}
+#navTablet a{
+	float: left;
+	font-family: odin;
+	font-size: 2em;
+	text-align: center;
+	text-decoration: none; /*Le quita las lineas de vinculo*/
+	margin-top: 5px;
+	margin-left: 70px;
+	color: white;
+	background-color: rgba(254, 206, 224, 0.2);
+	width: 135px;
+}
+#navTablet a:hover{
+	text-align: center;
+	background-color: rgba(253, 154, 253, 0.15);
+	width: 135px;
+	border-radius: 10px 10px;
+	box-shadow: 3px 3px 5px rgb(243, 186, 222);
+}
+
+#QuienSomos{
+	background-color: white;
+	height: 800px;
+	padding: 50px;
+}
+#QuienSomos h1{
+	font-family: flaming;
+	font-size: 5em;
+	font-weight: lighter;
+	text-align: center;
+	color: rgb(254, 206, 224);
+}
+#QuienSomos h2{
+	font-family: flaming;
+	font-size: 3em;
+	font-weight: lighter;
+	text-align: center;
+	color: rgb(130, 233, 201);
+}
+#QuienSomos h3{
+	font-family: brad;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: center;
+	color: gray;
+}
+#QuienSomos a{
+	text-decoration: none; 
+	color: gray;
+}
+.galeria img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 70px;
+    width: 300px;
+    height: 300px;
+}
+
+.galeria img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.somos img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 170px;
+    margin-top: 20px;
+    width: 500px;
+    
+}
+.somos img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#contactocelu{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 900px;
+	padding: 50px;
+}
+
+aside{
+	background-color: rgba(251, 254, 206, 0.9);
+	height: 190px;
+	padding-top: 50px;
+	padding-left: 350px;
+	display: inherit;
+}
+#redes{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 850px;
+	height: 350px;
+	float: left;
+	padding: 10px;
+}
+#redes img{
+	margin: 0px 90px;
+}
+#twitter{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 400px;
+	height: 500px;
+	float: left;
+	margin-left: 40px;
+}
+#mensaje{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 850px;
+	height: 250px;
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+}
+
+
+/*PARA PC*/
+@media only screen and (min-width: 1000px){ /*si el monitor mide desde 720 o más*/
+
+#celu{
+	overflow: auto;
+	display: none; /*si el monitor mide desde 720 o más, oculta */
+}
+#pc{
+	overflow: auto;
+	display: inherit; /*si el monitor mide desde 720 o más, oculta */
+}
+
+body{
+	background-color: white;
+	width: 1200px;
+	color: red;
+	margin: auto;
+}
+
+header{
+	background-image: url("imagenes/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+}
+header img{
+	margin-left: 340px;
+}
+
+#navTablet{
+	display: none;
+}
+
+#navPC{
+	display:inherit;
+}
+
+#navPC{
+	display: inherit;
+}
+
+#navPC{
+	margin-top: 10px;
+	background-color: rgba(254, 206, 224, 0.9);
+	height: 50px;
+}
+#navPC ol{
+	list-style-type: none;
+}
+#navPC a{
+	float: left;
+	font-family: odin;
+	font-size: 2em;
+	text-align: center;
+	text-decoration: none; /*Le quita las lineas de vinculo*/
+	margin-top: 5px;
+	margin-left: 120px;
+	color: white;
+	background-color: rgba(254, 206, 224, 0.2);
+	width: 135px;
+}
+#navPC a:hover{
+	text-align: center;
+	background-color: rgba(253, 154, 253, 0.15);
+	width: 135px;
+	border-radius: 10px 10px;
+	box-shadow: 3px 3px 5px rgb(243, 186, 222);
+}
+
+#QuienSomos{
+	background-color: white;
+	height: 800px;
+	padding: 50px;
+}
+#QuienSomos h1{
+	font-family: flaming;
+	font-size: 5em;
+	font-weight: lighter;
+	text-align: center;
+	color: rgb(254, 206, 224);
+}
+#QuienSomos h2{
+	font-family: flaming;
+	font-size: 3em;
+	font-weight: lighter;
+	text-align: center;
+	color: rgb(130, 233, 201);
+}
+#QuienSomos h3{
+	font-family: brad;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: center;
+	color: gray;
+}
+#QuienSomos a{
+	text-decoration: none; 
+	color: gray;
+}
+.galeria img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 25px;
+    width: 300px;
+    height: 300px;
+}
+
+.galeria img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.somos img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 500px;
+    
+}
+.somos img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+footer{
+	background-color: rgba(251, 254, 206, 0.9);
+	height: 650px;
+	padding: 50px;
+}
+footer h3{
+	font-family: brad;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: justify;
+	color: gray;
+}
+footer p{
+	font-family: brad;
+	font-size: 1.5em;
+	font-weight: lighter;
+	text-align: justify;
+	color: gray;
+}
+
+aside{
+	background-color: rgba(251, 254, 206, 0.9);
+	height: 190px;
+	padding-top: 50px;
+	padding-left: 450px;
+}
+#redes{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 600px;
+	height: 300px;
+	float: left;
+	padding: 10px;
+}
+#redes img{
+	margin: 0px 15px;
+}
+#twitter{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 400px;
+	height: 500px;
+	float: left;
+	margin-left: 40px;
+}
+#mensaje{
+	background-color: rgba(251, 254, 206, 0.9);
+	width: 500px;
+	height: 150px;
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
