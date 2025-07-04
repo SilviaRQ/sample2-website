@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- FontAwesome (para los íconos) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Te lo regalo yo | Inicio</title>
+</head>
+
+<body id="top">
+
+<!-- BOTONES DE NAVEGADOR -->	
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  	<a class="navbar-brand mx-auto mx-lg-0" href="index.html">Silvia Ramos</a>
+
+	<!-- BOTÓN HAMBURGUESA -->
+ 	<button class="navbar-toggler position-absolute end-0 me-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  	</button>
+
+	
+  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    	<div class="navbar-nav text-center mx-auto">
+      		<a class="nav-item nav-link fs-5 mx-4" href="index.html">Acerca de <span class="sr-only">(current)</span></a>
+      		<a class="nav-item nav-link fs-5 mx-4" href="#servicios">Experiencia</a>
+      		<a class="nav-item nav-link fs-5 mx-4" href="#galeria">Contacto</a>
+      		<a class="nav-item nav-link fs-5 mx-4" href="#contacto">Contacto</a>
+    	</div>
+  	</div>
+</nav>
+
+
+<section class="text-center mx-5">
+		<h1 class="display-1 mb-5">Celebrá con detalles únicos que cuentan tu historia</h1>
+		<img src="imagenes/nerea.jpeg" width="500" class="imagen-animada img-fluid d-block mx-auto" >
+		<h2 class="display-3 fw-bold pt-5">Somos un emprendimiento especializados en crear recuerdos dulces y personalizados.</h2>
+</section>
+
+<section class="d-flex justify-content-center my-5">
+  	<div class="p-4 text-center" style="max-width: 700px;">
+    	<h4 class="fs-4 fst-italic text-muted m-0">
+      Creamos experiencias para nuestros clientes, generando un impacto mediante ideas creativas e innovadoras en forma de propuestas materializadas en stands, ambientación, merchandising y souvenirs. <br>
+      Buscamos generar experiencias únicas y diferentes para cada cliente.
+		</h4>
+  	</div>
+</section>
+
+<section id="servicios" class="text-center mx-5">
+	<h2 class="display-3 fw-bold">Conocé los distintos servicios que tenemos para ofrecerte</h2>
+	<h3>Pedidos personalizados de:</h3>
+	<h4>Mesa dulce</h4>
+	<h4>Souvenirs</h4>	
+	<h4>Objetos de diseño y decoración</h4>
+	<br>
+	<h3>Ambientación de eventos de:</h3>
+	<h4>Cumpleaños</h4>
+	<h4>Baby shower</h4>
+	<h4>Graduaciones</h4>
+	<h4>y muchos más!</h4>
+</section>
+
+
+<section id="galeria" class="container mt-5"> 
+	<h2 class="display-3 fw-bold text-center mb-5">Nuestros trabajos</h2>
+	<div id="demo" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 800px;">
+    
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Imágenes -->
+     
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="galeria/1.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Los Angeles">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Decoración para Boda</h5>
+          <p>Pilar, Buenos Aires</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="galeria/2.jpeg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Chicago">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mesa Dulce</h5>
+          <p>CABA, Buenos Aires</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="galeria/3.jpeg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="New York">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Souvenirs</h5>
+          <p>San Isidro, Buenos Aires</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+
+
+<section class="text-center my-5">
+  <h2 class="display-5 fw-bold">¿Tenés un evento en mente?</h2>
+  <h4 class="fs-4 fst-italic text-muted">¡Contactanos!</h4>
+  <a href="#contacto" class="btn btn-success btn-lg mt-3">
+	<i class="fas fa-calendar-check me-2"></i>Reservar cita</a>
+</section>
+
+<!-- Texto centrado y margin top de 5 -->
+<aside id="contacto" class="text-center py-5 mt-5 bg-body-secondary">
+  <h4>Seguinos en nuestras redes</h4>
+  <div class="d-flex justify-content-center gap-4 fs-3 mt-3">
+    <a href="https://www.facebook.com" target="_blank" class="text-dark"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com" target="_blank" class="text-dark"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com" target="_blank" class="text-dark"><i class="fab fa-youtube"></i></a>
+  </div>
+</aside>
+
+<!-- py es padding de ambos lados mide 4, margin top mide 4 -->
+<footer class="bg-light text-center text-muted py-4 mt-4">
+	<p class="mb-0">&copy; Copyright © 2025 All rights reserved</p>
+</footer>
+
+
+<!--<a href="https://wa.me/54911xxxxxxxx" -->
+
+<a href="https://web.whatsapp.com/" target="_blank"
+   class="btn btn-success position-fixed rounded-circle d-flex align-items-center justify-content-center"
+   style="bottom: 80px; right: 20px; width: 40px; height: 40px; z-index: 1040;">
+  <i class="fab fa-whatsapp fs-4"></i>
+</a>
+
+
+<a href="#top"
+   class="btn btn-secondary position-fixed"
+   style="bottom: 20px; right: 20px; z-index: 1050;">
+  ↑ Arriba
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

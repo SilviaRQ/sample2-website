@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face{
 	font-family: "flaming";
 	src:url("fuentes/flaming.otf");
@@ -13,8 +17,73 @@
 	src:url("fuentes/odinrounded-bold.otf");
 }
 @font-face{
+	font-family: "calculative";
+	src:url("fuentes/Calculative.ttf");
+}
+
+@font-face{
+	font-family: "enough";
+	src:url("fuentes/eEnougha.ttf");
+}
+
+@font-face{
+	font-family: "modern";
+	src:url("fuentes/modern\ M.ttf");
+}
+
+@font-face{
 	font-family: "brad";
 	src:url("fuentes/brad.ttf");
+}
+
+@font-face{
+	font-family: "monserrat";
+	src:url("fuentes/Montserrat-VariableFont_wght.ttf");
+}
+
+
+/* Keyframe que permite hacer desvanecimiento. Lo llamas en cualquier lado usando aparecer*/
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Keyframe que permite deslizamientos, puedo aplicarlo a imagenes*/
+@keyframes deslizarDesdeDerecha {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.imagen-animada {
+  /*width: 300px;  o el tamaño que necesites */
+  left: 800px;
+  animation: deslizarDesdeDerecha 2s ease-out forwards;
+  opacity: 0; /* invisible al principio */
+}
+
+/*Personalizando etiqueta*/
+.tech-tag {
+  display: inline-block;
+  background-color: #112240;
+  color: #64ffda;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin: 3px 5px 0 0;
+  font-weight: 500;
 }
 
 body{
@@ -22,144 +91,66 @@ body{
 	margin: auto;
 }
 
-header{
-	/*display: flex;
-	justify-content:space-around;*/
-	background-image: url("imagenes/banner.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 300px;
-}
 
-header img{
-	display:block;
-	margin:auto;
-}
-
-.row{
-	text-align:center;
-	color:white;
-}
-
-.row a{
-	font-family: odin;
-	font-size: 2em;
-	/*text-align: center;*/
-	text-decoration: none; /*Le quita las lineas de vinculo*/
-	color: white;
-}
-.row a:hover{
-	text-align: center;
-	background-color: rgba(253, 154, 253, 0.15);
-	width: 135px;
-	border-radius: 10px 10px;
-	/*box-shadow: 3px 3px 5px rgb(243, 186, 222);*/
-	color: white;
-}
-
-section{
+/*section{
 	background-color: white;
 	padding: 50px;
-}
+}*/
 section h1{
-	font-family: flaming;
-	font-size: 5em;
-	font-weight: lighter;
-	text-align: center;
-	color: rgb(186,55,139);
+	font-family: "Lexend", sans-serif;
+	color: rgb(255, 255, 255);
+	animation: aparecer 1.5s ease-out;
 }
 section h2{
-	font-family: flaming;
-	font-size: 3em;
-	font-weight: lighter;
-	text-align: center;
-	color:rgb(56,188,149);
+	font-family: 'Inter', sans-serif;
+	color:rgb(0, 0, 0);
+	animation: aparecer 1.5s ease-out;
 }
 section h3{
+	font-family: monserrat;
+	font-size: 2em;
+	font-weight: lighter;
+	color: gray;
+	animation: aparecer 1.5s ease-out;
+}
+
+section h4{
 	font-family: brad;
 	font-size: 1.5em;
 	font-weight: lighter;
 	text-align: center;
 	color: gray;
-}
-section a{
-	text-decoration: none; 
-	color: gray;
-}
-.galeria img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    margin: 25px;
-    width: 300px;
-    height: 300px;
+	animation: aparecer 1.5s ease-out;
 }
 
-.galeria img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-.somos img {
-	display:block;
-	margin:auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 500px;  
-}
-.somos img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+#intro{
+  background-image: url("imagenes/sunset.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh; /* alto mínimo de pantalla completa */
+  display: flex; 
+  align-items: center;         /*centra vertical */
+  justify-content: center;    /* centra horizontal */
+  background-repeat: no-repeat;
+  color: white; /* si la imagen es oscura */
 }
 
-.contacto{
-	background-color: rgba(251, 254, 206, 0.9);
-	/*height: 650px;*/
-	padding: 50px;
+/*Carousel hace que las imagenes se desplacen*/
+.carousel-inner {
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-aside{
-	background-color: rgba(255,216,81,0.6);
-	height: 190px;
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
 }
 
-aside img{
-	display:block;
-	margin:auto;
+.carousel-caption h5,
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 5px;
 }
-
-#redes{
-	margin: 20px;
-}
-
-#redes p{
-	font-family: brad;
-	font-size: 1.5em;
-	font-weight: lighter;
-	/*text-align: justify;*/
-	color: gray;
-}
-
-#redes h3{
-	font-family: brad;
-	font-size: 1.5em;
-	font-weight: lighter;
-	text-align: center;
-	color: gray;
-}
-
-#twitter{
-	/*background-color: rgba(251, 254, 206, 0.9);
-	width: 400px;
-	height: 500px;
-	float: left;
-	margin-left: 40px;*/
-	margin: 40px;
-}
-/*#mensaje{
-	background-color: rgba(251, 254, 206, 0.9);
-	width: 500px;
-	height: 150px;
-	float: left;
-	margin-top: 20px;
-	padding-left: 20px;
-}*/
+/*Fin Carousel*/
