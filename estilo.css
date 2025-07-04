@@ -86,10 +86,14 @@ html {
   font-weight: 500;
 }
 
-body{
-	background-color: white;
-	margin: auto;
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #ccd6f6; /* opcional, para que combine con fondo oscuro */
+  background-color: #0a192f; /* si querés estilo tipo portfolio tech */
+  line-height: 1.6;
 }
+
 
 
 /*section{
