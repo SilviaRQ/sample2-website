@@ -9,14 +9,6 @@ html {
 }
 
 @font-face{
-	font-family: "flaming";
-	src:url("fuentes/flaming.otf");
-}
-@font-face{
-	font-family: "odin";
-	src:url("fuentes/odinrounded-bold.otf");
-}
-@font-face{
 	font-family: "calculative";
 	src:url("fuentes/Calculative.ttf");
 }
@@ -29,11 +21,6 @@ html {
 @font-face{
 	font-family: "modern";
 	src:url("fuentes/modern\ M.ttf");
-}
-
-@font-face{
-	font-family: "brad";
-	src:url("fuentes/brad.ttf");
 }
 
 @font-face{
@@ -89,15 +76,22 @@ html {
 /*Personalizando etiqueta*/
 .tech-tag {
   display: inline-block;
-  background-color: #112240;
-  color: #64ffda;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  margin: 3px 5px 0 0;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #707070;
+  border-radius: 10px;
   font-weight: 500;
+  font-size: 0.85rem;
+  margin: 2px 2px 0 0;
+  padding: 1px 6px 2px 6px;
 }
 
+/* Efecto al pasar el mouse */
+.tech-tag:hover {
+  background-color: #ebebeb;    /* color más claro */
+  transform: scale(1.05);       /* se agranda un poco */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* leve sombra */
+}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -112,11 +106,16 @@ body {
 	padding: 50px;
 }*/
 section h1{
-  font-family: "Source Code Pro", monospace;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+  /*font-family: "Source Code Pro", monospace;*/
+  /*font-optical-sizing: auto;*/
+  /*font-weight: 800;*/
+  /*font-style: normal;*/
 	color: rgb(255, 255, 255);
+  text-shadow:
+    -1px -1px 0 rgb(58, 58, 58),   /* arriba izquierda */
+     1px -1px 0 rgb(58, 58, 58),   /* arriba derecha */
+    -1px  1px 0 rgb(58, 58, 58),   /* abajo izquierda */
+     1px  1px 0 rgb(58, 58, 58);   /* abajo derecha */
 	animation: aparecer 1.5s ease-out;
 }
 
@@ -175,3 +174,7 @@ section h4{
   border-radius: 5px;
 }
 /*Fin Carousel*/
+
+#experiencia img{
+  animation: aparecer 1.5s ease-out;
+}
