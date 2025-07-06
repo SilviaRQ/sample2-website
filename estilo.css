@@ -133,7 +133,7 @@ section h4{
 }
 
 #intro{
-  background-image: url("imagenes/sunset.jpg");
+  background-image: url("img/sunset.jpg");
   background-size: cover;
   background-position: center;
   min-height: 90vh; /* alto mínimo de pantalla completa */
