@@ -30,7 +30,6 @@ html {
 
 
 /* Keyframe que permite hacer desvanecimiento. Lo llamas en cualquier lado usando aparecer*/
-
 @keyframes aparecer {
   from {
     opacity: 0;
@@ -108,10 +107,10 @@ body {
 section h1{
 	color: rgb(255, 255, 255);
   text-shadow:
-    -1px -1px 0 rgb(58, 58, 58),   /* arriba izquierda */
-     1px -1px 0 rgb(58, 58, 58),   /* arriba derecha */
-    -1px  1px 0 rgb(58, 58, 58),   /* abajo izquierda */
-     1px  1px 0 rgb(58, 58, 58);   /* abajo derecha */
+    -1px -1px 0 rgb(53, 27, 56),   /* arriba izquierda */
+     1px -1px 0 rgb(53, 27, 56),   /* arriba derecha */
+    -1px  1px 0 rgb(53, 27, 56),   /* abajo izquierda */
+     1px  1px 0 rgb(53, 27, 56);   /* abajo derecha */
 	animation: aparecer 1.5s ease-out;
 }
 
@@ -124,9 +123,9 @@ section h2{
 	animation: aparecer 1.5s ease-out;
 }
 section h3{
-  font-family: 'Cabin', sans-serif;
-	font-size: 1.2em;
-	font-weight: lighter;
+  /*font-family: 'Cabin', sans-serif;*/
+	font-size: 1em;
+	/*font-weight: lighter;*/
 	/*color: gray;
 	animation: aparecer 1.5s ease-out;*/
 }
