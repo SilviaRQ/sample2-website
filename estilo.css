@@ -74,6 +74,18 @@ html {
   opacity: 0; /* invisible al principio */
 }
 
+
+/*Linea de tiempo*/
+.timeline {
+  position: relative;
+  padding-left: 15px;
+}
+.timeline-item {
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+
 /*Personalizando etiqueta*/
 .tech-tag {
   display: inline-block;
@@ -118,18 +130,18 @@ section h2{
 }
 section h3{
   font-family: 'Cabin', sans-serif;
-	font-size: 2em;
+	font-size: 1.2em;
 	font-weight: lighter;
-	color: gray;
-	animation: aparecer 1.5s ease-out;
+	/*color: gray;
+	animation: aparecer 1.5s ease-out;*/
 }
 
 section h4{
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: lighter;
-	text-align: center;
-	color: gray;
-	animation: aparecer 1.5s ease-out;
+  color: gray;
+	/*text-align: center;
+	animation: aparecer 1.5s ease-out;*/
 }
 
 #intro{
