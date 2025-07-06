@@ -1,1 +1,1 @@
-Ejemplo de página web sencilla usando Responsive (en PROCESO) 
+Desarrollo de pagina web de tipo CV extendido (en PROCESO)
