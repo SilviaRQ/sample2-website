@@ -106,10 +106,6 @@ body {
 	padding: 50px;
 }*/
 section h1{
-  /*font-family: "Source Code Pro", monospace;*/
-  /*font-optical-sizing: auto;*/
-  /*font-weight: 800;*/
-  /*font-style: normal;*/
 	color: rgb(255, 255, 255);
   text-shadow:
     -1px -1px 0 rgb(58, 58, 58),   /* arriba izquierda */
