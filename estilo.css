@@ -92,6 +92,18 @@ html {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* leve sombra */
 }
 
+/* Lo usaré para ocultar cosas en la parte de proyectos */
+.oculto {
+  display: none;
+}
+
+/* Para la parte de proyectos, para solucionar el tema de las imagenes*/
+.card-img-top {
+  object-fit: cover;
+  height: 200px; /*  el valor que prefieras */
+  width: 100%;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: #ccd6f6; /* opcional, para que combine con fondo oscuro */
