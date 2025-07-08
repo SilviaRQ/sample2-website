@@ -155,7 +155,7 @@ section h2{
   font-variation-settings:"wdth" 57.7;
   font-style: normal;
 	color:#292c31;
-	animation: aparecer 1.5s ease-out;
+	/*animation: aparecer 1.5s ease-out;*/
 }
 section h3{
   /*font-family: 'Cabin', sans-serif;*/
