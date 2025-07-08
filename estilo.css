@@ -171,9 +171,15 @@ section h3{
 section h4{
 	font-size: 1em;
 	font-weight: lighter;
-  color: rgb(99, 96, 96);
+  color: rgb(63, 59, 59);
 	/*text-align: center;
 	animation: aparecer 1.5s ease-out;*/
+}
+
+aside h4{
+	font-size: 1.3em;
+	font-weight: bold;
+  color: rgb(36, 34, 34);
 }
 
 #intro{

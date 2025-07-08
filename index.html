@@ -38,7 +38,7 @@
   <title>Silvia Ramos | CV </title>
 </head>
 
-<body id="top">
+<body id="top" class="bg-body-light">
 
 <!-- BOTONES DE NAVEGADOR -->	
 <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative">
@@ -74,18 +74,20 @@
 <section id="acerca" class="d-flex justify-content-center my-5">
   	<div class="p-4 text-center" style="max-width: 700px;">
       <IMG src="img/FotoCVSil.png" width="200" class="mb-5" style=" box-shadow: inset 0 0 0 1px #383737; border-radius: 100px;"></IMG>
-    	<h4 class="fs-5 text-muted m-0">
-      🎓 Estudiante avanzada de Ingeniería Electrónica en la UBA <br>
-      🔧 Me gusta crear proyectos pequeños de automatización, domótica y scripts útiles<br>
-      👀 Estoy interesada en domótica, automatización y control, modelado 3D y desarrollo de páginas web<br>
-      🚀 Actualmente realizando mi trabajo final de carrera<br>
+    	<!-- <h4  class="fs-6 text-muted m-0"> -->
+      <h4 style="font-size: 1.05em;">
+        <i class="fa-solid fa-graduation-cap"></i> Estudiante avanzada de Ingeniería Electrónica en la UBA.<br>
+        <i class="fa-solid fa-rocket"></i> Actualmente realizando mi trabajo final de carrera.<br>
+        <i class="fa fa-tools"></i> Me gusta crear proyectos pequeños de automatización, domótica y scripts útiles.<br>
+        <i class="fa-solid fa-briefcase"></i> Estoy interesada en domótica, automatización y control, modelado 3D y desarrollo de páginas web.<br>
 		</h4>
   	</div>
 </section>
 
 
 <!-- EXPERIENCIA LABORAL -->
-<section id="experiencia" class="container my-5" data-aos="fade-up" data-aos-duration="2000">
+<section id="experiencia" class="my-5 py-5 bg-light" data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
   <h2 class="mb-4">Experiencia Laboral</h2>
   <div class="timeline">
 
@@ -96,7 +98,7 @@
       <div class="col-md-6 order-3 order-md-2">
         <strong>Ingeniera de diseño de cables</strong>
         <h3>Prysmian</h3>
-        <h4> • Diseño de cables de baja y media tensión de acuerdo a las especificaciones del cliente.<br>
+        <h4>• Diseño de cables de baja y media tensión de acuerdo a las especificaciones del cliente.<br>
             • Realizacion de planillas de datos técnicos garantizados de los cables diseñados.<br>
             • Participación en prototipos de nuevos cables.</h4>
             <span class="tech-tag">Documentación técnica</span> <span class="tech-tag">Diseño de cables</span>
@@ -149,7 +151,7 @@
       </div>
       <div class="col-md-6 order-3 order-md-2">
         <strong>Pañolera</strong>
-        <p class="mb-1">Facultad de Ingeniería de la Universidad de Buenos Aires</p>
+        <h3>Facultad de Ingeniería de la Universidad de Buenos Aires</h3>
         <h4>◦ Realización de mantenimiento técnico de aulas del Departamento de Electrónica.<br>
             ◦ Administración y préstamo de instrumental a alumnos y docentes que dictan materias de electrónica</h4>
         <span class="tech-tag">Administración</span> <span class="tech-tag">Mantenimiento</span>
@@ -159,6 +161,7 @@
       </div>
     </div>
 
+  </div>
   </div>
 </section>
 
@@ -171,7 +174,7 @@
         <a href="https://fi.uba.ar/" target="_blank"><img src="img/logofiuba.png" alt="Logo FIUBA" class="me-3" style="width:150px;"></a>
         <div>
           <strong>Ingeniería Electrónica</strong>
-          <p class="text-muted mb-1">Facultad de Ingeniería – UBA</p>
+          <p class="mb-1">Facultad de Ingeniería – UBA</p>
           <h4 class="mb-0">Actualmente realizando el Trabajo Práctico Profesional.</h4>
         </div>
       </div>
@@ -180,7 +183,7 @@
         <a href="https://www.ehu.eus/es/web/bilboko-ingeniaritza-eskola"><img src="https://aulafutbol.uca.es/wp-content/uploads/2020/10/logoUPV.png" alt="Logo UPV" style="width:150px;" class="me-3"></a>
         <div>
           <strong>Ingenieria Electrónica Industrial y Automática</strong>
-          <p class="text-muted mb-1">Escuela de Ingenieria de Bilbao - UPV/EHU</p>
+          <p class="mb-1">Escuela de Ingenieria de Bilbao - UPV/EHU</p>
           <h4 class="mb-0">Sep 2024 - Ene 2025 | Intercambio académico.</h4>
         </div>
       </div>
@@ -188,8 +191,9 @@
 </section>
 
 
-<section class="container my-5">
-  <div class="row justify-content-center">
+<section class="my-5 py-5 bg-light" data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+    <div class=" row justify-content-center">
     <!-- FORMACION COMPLEMENTARIA -->
     <div id="complementario" class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
       <h2 class="mb-4">Formación complementaria</h2>
@@ -236,13 +240,16 @@
             <img height="30" src="https://skillicons.dev/icons?i=vue,django,react,java" alt="vue,django,react,java">
           </div>
       </div>
+      </div>
   </div>
+
+  <section class="text-center mt-3 mb-1">
+    <a href="SilRamosCV.pdf" target="_blank" class="btn btn-success btn-lg mt-3">
+    <i class="fas fa-download fs-4 mx-2"></i>Descargar CV</a>
+  </section>
 </section>
 
-<section class="text-center my-5">
-  <a href="SilRamosCV.pdf" target="_blank" class="btn btn-success btn-lg mt-3">
-	<i class="fas fa-download fs-4 mx-2"></i>Descargar CV</a>
-</section>
+
 
 
 <!-- PROYECTOS -->
