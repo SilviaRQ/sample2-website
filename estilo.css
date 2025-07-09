@@ -98,6 +98,12 @@ html {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* leve sombra */
 }
 
+#experiencia img:hover {
+  /*background-color: #ebebeb; */   /* color más claro */
+  transform: scale(1.05);       /* se agranda un poco */
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */ /* leve sombra */
+}
+
 /* Lo usaré para ocultar cosas en la parte de proyectos */
 .oculto {
   display: none;
